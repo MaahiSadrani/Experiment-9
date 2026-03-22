@@ -19,7 +19,10 @@ np.array() → creates an array
 np.arange() → generates values in a given range
 np.linspace() → generates evenly spaced values
 np.eye() → creates an identity matrix
-
+zeros() → array of 0s
+ones() → array of 1s
+ndim → number of dimensions
+dtype → data type of elements
 # Built-in Functions Used
 np.mean() → calculates mean of array elements
 np.median() → calculates median
