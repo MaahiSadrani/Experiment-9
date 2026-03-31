@@ -23,7 +23,38 @@ zeros() → array of 0s
 ones() → array of 1s
 ndim → number of dimensions
 dtype → data type of elements
-# Built-in Functions Used
+
+# Indexing and Slicing: Access or extract specific elements or parts of an array.
+Indexing Syntax : - array[index] & array[row_index, column_index]
+Slicing Syntax : - array[start : end : step]
+eg.a[0] # first element
+a[1:3] # slicing
+a[-1] # last element
+
+# Mathematical Operations: Performs element-wise arithmetic operations on arrays.
+Functions:
+np.add() – Adds corresponding elements of two arrays.
+np.subtract() – Subtracts elements of one array from another element-wise.
+np.multiply() – Multiplies corresponding elements of two arrays.
+np.divide() – Divides elements of one array by another element-wise.
+
+# Dimension of array-Returns number of dimensions (axes) using ndim.
+ndim: The number of dimensions (axes) of the array (e.g., 1 for a vector, 2 for a matrix).
+eg.import numpy as np
+a = np.array([[1,2,3],[4,5,6]])
+print(a.ndim)
+size: The total number of elements in the array.
+eg.a = np.array([[1,2,3],[4,5,6]])
+print(a.size)
+shape: A tuple indicating the size of the array in each dimension using array.shape command.
+eg.import numpy as np a = np.array([[1,2,3],[4,5,6]])
+print(a.shape)
+dtype: The data type of the elements in the array (e.g., int64, float64) using commnad array.dtype.
+eg.import numpy as np
+a = np.array([1,2,3,4])
+print(a.dtype)
+
+## Built-in Functions Used
 np.mean() → calculates mean of array elements
 np.median() → calculates median
 np.max() → finds maximum value
